@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<script>
+
+	var marks;
+	function h1() {marks=prompt("How many correct Answer Did You get? PLease be Honest!");
+    if(marks>=11){
+     alert("You cannot enter a value more than 10");
+    }
+	else if(marks>=8&&marks<=10){
+     alert("Congrats you Have done Awsome!");
+	}
+	else if(marks>=6&&marks<8){
+		alert("Congratulations you have done Great!");
+	}
+	else if(marks>=4&&marks<6){
+		alert("Congratulations You have done Good!");
+	}
+	else if(marks>-1&&marks<4){
+		alert("failed, try harder next time!");
+	}
+	else if(marks<0){
+		alert("You cannot eneter a value less than 0");
+	}
+	else if(marks="text"){
+		alert("Invalid");
+	}
+	}
+	
+</script>
+<style>
+   body{
+    background-color:  rgb(36, 65, 231);
+}
+h1{
+	color: black;
+	text-align: center;
+}
+.b1{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+
+<body>
+	<div class="text-center">
+		<br><br>
+    <h1><b>You Have Completed Your Quizz!</b></h1>
+	<br><br><br><br><br>
+	<button class="btn-success btn b1" onclick="h1()"><b>Enter The Number Of correct Questions You Got!</b></button>
+	<br><br><br><br><br><br><br><br>
+	<a href="index.html"><button class="btn-danger btn b1"><b>Try Again</b></button></div></a>
+</div>
+</body>
+</html>
